@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Gesture</title>
+    <style>
+        body {
+            background-color: #ffe4e1; /* Moccasin for a romantic, warm feel */
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .love-container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #8B0000; /* Dark Red for passion */
+        }
+        p {
+            font-style: italic;
+            color: #696969; /* Dim Gray for gentle contrast */
+        }
+    </style>
+</head>
+<body>
+    <div class="love-container">
+        <h1>Love Letter</h1>
+        <p>Every moment with you feels like a verse from an unwritten poem, where love is the ink, and our hearts are the pages.</p>
+        <button onclick="showMore()">Read More</button>
+    </div>
+
+    <script>
+        function showMore() {
+            document.querySelector('.love-container').innerHTML += 
+                `<p>As the stars light up the night sky, my thoughts dance around you, 
+                weaving dreams of a future where every day is as enchanting as the first.</p>`;
+            document.querySelector('button').style.display = 'none'; // Hide button after use
+        }
+    </script>
+</body>
+</html>
